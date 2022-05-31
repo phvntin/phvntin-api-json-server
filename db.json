@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "e045ef3b-b4c9-4017-bc56-3f5067a6df65",
+      "name": "Ms. Julien Shanahan",
+      "createdAt": 1653994666480,
+      "updatedAt": 1653994666480
+    },
+    {
+      "id": "676f57d6-adc6-423a-bb18-f3467045b107",
+      "name": "Miss Alex Abernathy",
+      "createdAt": 1653994666480,
+      "updatedAt": 1653994666480
+    },
+    {
+      "id": "cce8ec20-6222-47c2-b225-f256f25e7ad0",
+      "name": "Miss Kaylah Botsford",
+      "createdAt": 1653994666480,
+      "updatedAt": 1653994666480
+    },
+    {
+      "id": "52662eef-920e-4893-b21b-56382d7d06e9",
+      "name": "Mrs. Danial Wisoky",
+      "createdAt": 1653994666481,
+      "updatedAt": 1653994666481
+    },
+    {
+      "id": "ec2a1fa3-191e-4cae-a796-e00366713e95",
+      "name": "Mrs. Horacio Cronin",
+      "createdAt": 1653994666481,
+      "updatedAt": 1653994666481
+    }
+  ],
+  "products": [],
+  "profile": { "name": "Tin" }
+}
