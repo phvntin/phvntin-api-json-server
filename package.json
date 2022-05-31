@@ -15,7 +15,8 @@
   "author": "Tin Van Pham",
   "license": "MIT",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "query-string": "^7.1.1"
   },
   "devDependencies": {
     "casual": "^1.6.2",

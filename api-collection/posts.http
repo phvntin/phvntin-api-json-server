@@ -1,0 +1,42 @@
+ @baseUrl=http://localhost:3000/api
+ @resourceName=posts
+# Categories
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name filterSort
+GET {{baseUrl}}/{{resourceName}}?_sort=updatedAt&_order=desc
+
+###
+
+# @name filterPagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=6
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "title": "Ex post 1",
+    "author": "Daniel"
+}
+
+### 
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/4
+Content-Type: application/json
+
+{
+    "title": "Nothing"
+}
+
+###
+
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/2

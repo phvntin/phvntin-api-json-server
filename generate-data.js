@@ -1,36 +1,35 @@
 const casual = require('casual')
 const fs = require('fs')
 
-const randomCategoryList = (n) => {
-  const categoryList = []
+const randomPostList = (numberOfPosts) => {
+  if (numberOfPosts <= 0) return []
+  const postList = []
 
-  Array.from(new Array(n)).forEach(() => {
-    if (n <= 0) return []
-    const category = {
+  Array.from(new Array(numberOfPosts)).forEach(() => {
+    const post = {
       id: casual.uuid,
-      name: casual.name,
+      title: casual.title,
+      author: `${casual.first_name} ${casual.last_name}`,
+      description: casual.description,
       createdAt: Date.now(),
       updatedAt: Date.now(),
+      imageUrl: `https://picsum.photos/id/${casual.integer(1, 999)}/1368/400`,
     }
 
-    categoryList.push(category)
+    postList.push(post)
   })
 
-  return categoryList
+  return postList
 }
 
 // IFFE
 ;(() => {
   // random data
-  const categoryList = randomCategoryList(5)
+  const postList = randomPostList(50)
 
   // prepare db object
   const db = {
-    categories: categoryList,
-    products: [],
-    profile: {
-      name: 'Tin',
-    },
+    posts: postList,
   }
 
   // write db object to db.json
